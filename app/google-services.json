@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "340129708953",
+    "firebase_url": "https://qatu-153a7-default-rtdb.firebaseio.com",
+    "project_id": "qatu-153a7",
+    "storage_bucket": "qatu-153a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340129708953:android:c2604c056cb6a335a23108",
+        "android_client_info": {
+          "package_name": "com.anderson.qatuappcf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340129708953-h90rh16ger0ujunnkgpnprgs7gr6v33e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8ljPHvsUnTesgi4KcZuKKIiRupMqITDc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340129708953-h90rh16ger0ujunnkgpnprgs7gr6v33e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

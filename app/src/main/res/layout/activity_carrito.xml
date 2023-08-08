@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232121"
+    android:orientation="vertical"
+    tools:context=".Carrito">
+
+    <LinearLayout
+        android:id="@+id/llFondo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/cliente_f"
+        android:gravity="center"
+        android:paddingTop="10dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/back_button"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="center_vertical"
+                android:background="#232121"
+                android:padding="5dp"
+                android:src="@drawable/ic_back_arrow"
+                android:tint="#FFFF" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/logo" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Mi Carrito"
+                android:textColor="#FFFF"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="No. Orden"
+                        android:textColor="#FFFF"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvOrden"
+                        android:layout_column="2"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="#FFFF"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="Nombre del Producto"
+                        android:textColor="#FFFF"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_column="2"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="Precio Unitario"
+                        android:textColor="#FFFF"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_column="3"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="Cantidad"
+                        android:textColor="#FFFF"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_column="4"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="Subtotal"
+                        android:textColor="#FFFF"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableLayout
+                    android:id="@+id/tableLayoutCarrito"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"></TableLayout>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:layout_marginTop="60dp">
+
+                <TableRow android:layout_marginHorizontal="30dp">
+
+                    <TextView
+
+                        android:text="Total del Carrito"
+                        android:textColor="#FFFF"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="Total a pagar"
+                        android:textColor="#FFFF"
+                        android:textStyle="bold" />
+
+                    <TextView
+
+                        android:id="@+id/ValorTotal"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="#FFFF"
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <Button
+                    android:id="@+id/btnReservar"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Reservar Producto"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

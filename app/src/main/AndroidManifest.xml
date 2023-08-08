@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="QatuApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QatuAppCF"
+        tools:targetApi="31">
+        <activity
+            android:name=".Pedidos"
+            android:exported="false" />
+        <activity
+            android:name=".MapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Carrito"
+            android:exported="false" />
+        <activity
+            android:name=".Mariscos"
+            android:exported="false" />
+        <activity
+            android:name=".Carnes"
+            android:exported="false" />
+        <activity
+            android:name=".Verdura"
+            android:exported="false" />
+        <activity
+            android:name=".ActVendedor"
+            android:exported="false" />
+        <activity
+            android:name=".Fruta"
+            android:exported="false" />
+        <activity
+            android:name=".Registrarse"
+            android:exported="false" />
+        <activity
+            android:name=".Cliente"
+            android:exported="false" />
+        <activity
+            android:name=".Admin"
+            android:exported="false" />
+        <activity
+            android:name=".AdminProducto"
+            android:exported="false" />
+        <activity
+            android:name=".AdminVendedor"
+            android:exported="false" />
+        <activity
+            android:name=".Producto"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrarVendedor"
+            android:exported="false" />
+        <activity
+            android:name=".Vendedor"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAN1QaV2qdOws8Co3CQ7eK4nkVm8P7vkpM" />
+    </application>
+
+</manifest>
